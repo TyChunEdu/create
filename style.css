@@ -168,12 +168,20 @@ div.info > * {
     display: inline-block;
 }
 
-.row div + p {
+.row > div + p, .row > p + div {
     margin-left: 16px;
 }
 
-.row p, .row d {
+.row p {
+    flex: 2;
+}
+
+.row div {
     flex: 1;
+}
+
+.row figure {
+    flex: 0.25;
 }
 
 @media only screen and (max-width: 1220px) {
